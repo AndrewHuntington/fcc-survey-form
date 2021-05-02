@@ -1,6 +1,42 @@
+html {
+  font-size: 14px;
+}
 body {
-  /* background-color: green; */
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url("oriental-tiles.png");
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 h1 {
-  font-size: 7vh;
+  font-size: 3.5em;
+  letter-spacing: 0.03em;
+  line-height: 1.1em;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+form {
+  padding-left: 50px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 4px solid #fff;
+  border-radius: 30px;
+  margin: 50px auto;
+  padding: 50px;
+  width: 55vw;
+}
+
+#description {
+  font-size: 1.1em;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 800px) {
+  form {
+    padding-left: 10px;
+  }
 }
