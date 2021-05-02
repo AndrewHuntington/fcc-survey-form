@@ -16,71 +16,93 @@
       </p>
 
       <form action="" id="survey-form">
-        <label for="name" id="name-label">Name</label><br />
-        <input name="name" id="name" placeholder="John Smith" required /><br />
+        <div class="form-element">
+          <label class="form-q" for="name" id="name-label">Name</label>
+          <input
+            class="form-a"
+            name="name"
+            id="name"
+            placeholder="John Smith"
+            required
+          />
+        </div>
 
-        <label for="email" id="email-label">Email</label><br />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="johnsmith@example.com"
-          required
-        /><br />
+        <div class="form-element">
+          <label class="form-q" for="email" id="email-label">Email</label>
+          <input
+            class="form-a"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johnsmith@example.com"
+            required
+          />
+        </div>
 
-        <label for="number" id="number-label">Age</label><br />
-        <input
-          type="number"
-          name="number"
-          id="number"
-          min="13"
-          max="130"
-          placeholder="Age"
-        /><br />
+        <div class="form-element">
+          <label class="form-q" for="number" id="number-label">Age</label>
+          <input
+            class="form-a"
+            type="number"
+            name="number"
+            id="number"
+            min="13"
+            max="130"
+            placeholder="Age"
+          />
+        </div>
 
-        <p>How did you hear about us?</p>
-        <select name="dropdown" id="dropdown">
-          <option value="none" selected disabled hidden>
-            Please select an option
-          </option>
-          <option value="ad">Advertisement</option>
-          <option value="friend">From a friend</option>
-          <option value="web-search">Web search result</option>
-          <option value="other">Other</option></select
-        ><br />
+        <div class="form-element">
+          <p class="form-q">How did you hear about us?</p>
+          <select name="dropdown" id="dropdown">
+            <option value="none" selected disabled hidden>
+              Select an option
+            </option>
+            <option value="ad">Advertisement</option>
+            <option value="friend">From a friend</option>
+            <option value="web-search">Web search result</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-        <p>Do you want to join our mailing list?</p>
-        <input type="radio" name="mailing-list" id="yes" value="yes" />
-        <label for="yes">Yes</label>
-        <input type="radio" name="mailing-list" id="no" value="no" />
-        <label for="no">No</label><br />
+        <div class="form-element">
+          <p class="form-q">Do you want to join our mailing list?</p>
+          <input type="radio" name="mailing-list" id="yes" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="mailing-list" id="no" value="no" />
+          <label for="no">No</label><br />
+        </div>
 
-        <p>Please select any which describe you:</p>
-        <input type="checkbox" name="device1" id="device1" value="phone" />
-        <label for="device1">I can receive email on my phone</label><br />
-        <input type="checkbox" name="device2" id="device2" value="pc" />
-        <label for="device2">I can receive email on my PC</label><br />
-        <input type="checkbox" name="device3" id="device3" value="other" />
-        <label for="device3">
-          I can receive email on another internet connected device </label
-        ><br />
-        <input type="checkbox" name="device4" id="device4" value="none" />
-        <label for="device4">
-          I either do not have an email address or a device capable of receiving
-          email </label
-        ><br />
+        <div class="form-element">
+          <p class="form-q">Please select any which describe you:</p>
+          <input type="checkbox" name="device1" id="device1" value="phone" />
+          <label for="device1">I can receive email on my phone</label><br />
+          <input type="checkbox" name="device2" id="device2" value="pc" />
+          <label for="device2">I can receive email on my PC</label><br />
+          <input type="checkbox" name="device3" id="device3" value="other" />
+          <label for="device3">
+            I can receive email on another internet connected device </label
+          ><br />
+          <input type="checkbox" name="device4" id="device4" value="none" />
+          <label for="device4">
+            I either do not have an email address or a device capable of
+            receiving email </label
+          ><br />
+        </div>
 
-        <label for="comments"
-          >If you have any additional comments, please write them here:</label
-        ><br />
-        <textarea
-          name="comments"
-          id="comments"
-          cols="30"
-          rows="10"
-          placeholder="Write your thoughts here..."
-        ></textarea
-        ><br /><br />
+        <div class="form-element">
+          <label class="form-q" for="comments"
+            >If you have any additional comments, please write them here:</label
+          >
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Write your thoughts here..."
+          ></textarea
+          ><br />
+        </div>
 
         <input type="submit" id="submit" value="submit" />
       </form>

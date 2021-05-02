@@ -26,6 +26,29 @@ form {
   padding: 50px;
   width: 55vw;
 }
+.form-element {
+  margin: 15px 0;
+}
+.form-q {
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: 0.2em;
+}
+.form-a {
+  display: block;
+  font-size: 1.2em;
+  height: 1.7em;
+  padding-left: 0.5em;
+  width: 100%;
+}
+
+select {
+  display: block;
+  font-size: 1.1em;
+  padding-left: 1em;
+  width: 50%;
+  height: 3em;
+}
 
 #description {
   font-size: 1.1em;
