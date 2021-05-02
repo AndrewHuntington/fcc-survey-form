@@ -67,27 +67,55 @@
 
         <div class="form-element">
           <p class="form-q">Do you want to join our mailing list?</p>
-          <input type="radio" name="mailing-list" id="yes" value="yes" />
-          <label for="yes">Yes</label>
-          <input type="radio" name="mailing-list" id="no" value="no" />
-          <label for="no">No</label><br />
+          <div id="radio-buttons">
+            <input type="radio" name="mailing-list" id="yes" value="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="mailing-list" id="no" value="no" />
+            <label for="no">No</label><br />
+          </div>
         </div>
 
         <div class="form-element">
           <p class="form-q">Please select any which describe you:</p>
-          <input type="checkbox" name="device1" id="device1" value="phone" />
-          <label for="device1">I can receive email on my phone</label><br />
-          <input type="checkbox" name="device2" id="device2" value="pc" />
-          <label for="device2">I can receive email on my PC</label><br />
-          <input type="checkbox" name="device3" id="device3" value="other" />
-          <label for="device3">
-            I can receive email on another internet connected device </label
-          ><br />
-          <input type="checkbox" name="device4" id="device4" value="none" />
-          <label for="device4">
-            I either do not have an email address or a device capable of
-            receiving email </label
-          ><br />
+          <div id="checklist">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="device1"
+              id="device1"
+              value="phone"
+            />
+            <label for="device1">I can receive email on my phone</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="device2"
+              id="device2"
+              value="pc"
+            />
+            <label for="device2">I can receive email on my PC</label><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="device3"
+              id="device3"
+              value="other"
+            />
+            <label for="device3">
+              I can receive email on another internet connected device </label
+            ><br />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="device4"
+              id="device4"
+              value="none"
+            />
+            <label class="checkbox" for="device4">
+              I either do not have an email address or a device capable of
+              receiving email </label
+            ><br />
+          </div>
         </div>
 
         <div class="form-element">
@@ -102,7 +130,7 @@
           ><br />
         </div>
 
-        <input type="submit" id="submit" value="submit" />
+        <input type="submit" id="submit" value="Submit" />
       </form>
     </div>
 
