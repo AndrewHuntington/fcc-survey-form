@@ -28,6 +28,20 @@ textarea {
   padding-left: 0.5em;
   width: 100%;
 }
+footer {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 50px;
+  text-align: center;
+}
+footer a:link {
+  color: rgba(26, 211, 171, 0.7);
+}
+footer a:visited {
+  color: hsla(167, 97%, 80%, 0.2);
+}
+footer a:hover {
+  color: rgba(26, 211, 171, 1);
+}
 
 .content {
   background-color: hsla(240, 33%, 21%, 0.85);
